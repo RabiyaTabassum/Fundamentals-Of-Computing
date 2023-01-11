@@ -1,0 +1,15 @@
+int main()
+{
+	int n,decimal_num,base,r;
+	printf("enter binary number");
+	scanf("%d",&n);
+	while(n>0)
+	{
+	r=n%10;
+	decimal_num=decimal_num+r*base;
+	n=n/10;
+	base=base*2;
+}
+printf("decimal number is %d",decimal_num);
+return 0;
+}
